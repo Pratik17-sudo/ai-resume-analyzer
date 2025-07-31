@@ -1,13 +1,18 @@
+import Navbar from "~/components/Navbar";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Resume" },
+    { name: "description", content: "Smart Feedback for your dream job!" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <main className="bg-[url('/images/bg-main.svg')] bg-cover">
+  <Navbar/>
+  
+  
+  </main>
 }
